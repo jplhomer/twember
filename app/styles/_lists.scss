@@ -1,0 +1,9 @@
+ul.tweets {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: $pad;
+  }
+}
