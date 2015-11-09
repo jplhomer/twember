@@ -1,0 +1,17 @@
+<header class="header">
+  <h1>Twember: Twitter with Ember</h1>
+</header>
+
+<div class="wrapper">
+  <div class="timeline">
+    <ul class="tweets">
+      {{#each tweets as |tweet|}}
+        <li>
+          @{{screen_name}}: {{text}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+{{outlet}}
