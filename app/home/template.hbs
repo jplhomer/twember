@@ -1,1 +1,7 @@
-{{outlet}}
+<ul class="tweets">
+  {{#each model as |tweet|}}
+    <li>
+        {{tweet.text}}
+    </li>
+  {{/each}}
+</ul>
