@@ -1,7 +1,9 @@
 <ul class="tweets">
   {{#each model as |tweet|}}
     <li>
-        {{tweet.text}}
+        {{#tweet-post}}
+          {{tweet.text}}
+        {{/tweet-post}}
     </li>
   {{/each}}
 </ul>
