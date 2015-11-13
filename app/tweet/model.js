@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   text: DS.attr( 'string' ),
@@ -24,8 +25,8 @@ export default DS.Model.extend({
 
     // Remove media URLs
     if ( entities.media ) {
-      for (var i = 0; i < entities.media.length; i++) {
-        formattedText = formattedText.replace(entities.media[i].url, '');
+      for (var a = 0; a < entities.media.length; a++) {
+        formattedText = formattedText.replace(entities.media[a].url, '');
       }
     }
 
