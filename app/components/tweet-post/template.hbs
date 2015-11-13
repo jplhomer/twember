@@ -1,8 +1,11 @@
-<div class="block block--tweet">
+<div class="block block--tweet" {{action "toggleExpanded"}}>
   <div class="block__text">
     <p>{{yield}}</p>
   </div>
   <div class="block__meta">
     <p>{{tweet-timestamp time=created_at}}</p>
   </div>
+  {{#if isExpanded}}
+    <p>Expanded</p>
+  {{/if}}
 </div>
