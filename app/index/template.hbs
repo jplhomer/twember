@@ -1,7 +1,7 @@
 <ul class="tweets">
   {{#each model as |tweet|}}
     <li>
-        {{#tweet-post created_at=tweet.created_at}}
+        {{#tweet-post created_at=tweet.created_at media=tweet.entities.media}}
           {{{tweet.formattedText}}}
         {{/tweet-post}}
     </li>

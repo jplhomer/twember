@@ -5,6 +5,9 @@
   <div class="block__meta">
     <p>{{tweet-timestamp time=created_at}}</p>
   </div>
+  {{#if media}}
+    Media
+  {{/if}}
   {{#if isExpanded}}
     <p>Expanded</p>
   {{/if}}
