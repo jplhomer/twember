@@ -5,5 +5,10 @@ ul.tweets {
 
   li {
     margin-bottom: $pad;
+    border-bottom: 1px solid #ccc;
+
+    &:last-child {
+      border: none;
+    }
   }
 }

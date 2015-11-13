@@ -1,5 +1,6 @@
 <div class="block block--tweet" {{action "toggleExpanded"}}>
   <div class="block__header">
+    {{tweet-avatar user=user}}
     <a href="#">{{user.name}}</a> @{{user.screen_name}} • <a href="#">{{tweet-timestamp time=created_at}}</a>
   </div>
   <div class="block__text">

@@ -6,3 +6,21 @@
     }
   }
 }
+
+.block--tweet {
+  margin-left: $pad*4;
+  padding: $pad*.5;
+
+  .block__avatar {
+    float: left;
+    margin-left: -$pad*4;
+  }
+
+  .block__text p {
+    margin-top: 0;
+  }
+
+  .block__header {
+    color: #666;
+  }
+}
