@@ -2,7 +2,7 @@
   {{#each model as |tweet|}}
     <li>
         {{#tweet-post created_at=tweet.created_at}}
-          {{tweet.text}}
+          {{{tweet.formattedText}}}
         {{/tweet-post}}
     </li>
   {{/each}}
