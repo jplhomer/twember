@@ -1,9 +1,9 @@
 <div class="block block--tweet" {{action "toggleExpanded"}}>
+  <div class="block__header">
+    <a href="#">{{user.name}}</a> @{{user.screen_name}} • <a href="#">{{tweet-timestamp time=created_at}}</a>
+  </div>
   <div class="block__text">
     <p>{{yield}}</p>
-  </div>
-  <div class="block__meta">
-    <p>{{tweet-timestamp time=created_at}}</p>
   </div>
   {{#if media}}
     {{tweet-media media=media}}
