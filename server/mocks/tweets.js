@@ -977,7 +977,183 @@ module.exports = function(app) {
   tweetsRouter.get('/:id', function(req, res) {
     res.send({
       'tweets': {
-        id: req.params.id
+        "created_at": "Mon Nov 09 01:55:01 +0000 2015",
+        "id": 663535230649770000,
+        "id_str": "663535230649769985",
+        "text": "Disturbance in Australian detention centre after death of asylum seeker https://t.co/66b34xPQj2 https://t.co/emrdDiUIN3",
+        "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 972651,
+          "id_str": "972651",
+          "name": "Mashable",
+          "screen_name": "mashable",
+          "location": "",
+          "description": "News, resources, inspiration and fun for the connected generation. Tweets by @mashable staff.",
+          "url": "http://t.co/1Gm8aVACKn",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http://t.co/1Gm8aVACKn",
+                  "expanded_url": "http://mashable.com",
+                  "display_url": "mashable.com",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 6064577,
+          "friends_count": 2826,
+          "listed_count": 126429,
+          "created_at": "Mon Mar 12 01:28:01 +0000 2007",
+          "favourites_count": 577,
+          "utc_offset": -18000,
+          "time_zone": "Eastern Time (US & Canada)",
+          "geo_enabled": false,
+          "verified": true,
+          "statuses_count": 162694,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "00AEEF",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/705312036/bf7ca2a3f077d7e57b12a5ea4f1db268.png",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/705312036/bf7ca2a3f077d7e57b12a5ea4f1db268.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/638342444052930560/gMZvEMvt_normal.png",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/638342444052930560/gMZvEMvt_normal.png",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/972651/1401484849",
+          "profile_link_color": "00AEEF",
+          "profile_sidebar_border_color": "FFFFFF",
+          "profile_sidebar_fill_color": "88DBF4",
+          "profile_text_color": "3B3B3B",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": true,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/66b34xPQj2",
+              "expanded_url": "http://on.mash.to/1QcZEla",
+              "display_url": "on.mash.to/1QcZEla",
+              "indices": [
+                72,
+                95
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 663535229450084400,
+              "id_str": "663535229450084354",
+              "indices": [
+                96,
+                119
+              ],
+              "media_url": "http://pbs.twimg.com/media/CTVZxo9UYAI5Qs9.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CTVZxo9UYAI5Qs9.jpg",
+              "url": "https://t.co/emrdDiUIN3",
+              "display_url": "pic.twitter.com/emrdDiUIN3",
+              "expanded_url": "http://twitter.com/mashable/status/663535230649769985/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 340,
+                  "h": 191,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 949,
+                  "h": 534,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 663535229450084400,
+              "id_str": "663535229450084354",
+              "indices": [
+                96,
+                119
+              ],
+              "media_url": "http://pbs.twimg.com/media/CTVZxo9UYAI5Qs9.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CTVZxo9UYAI5Qs9.jpg",
+              "url": "https://t.co/emrdDiUIN3",
+              "display_url": "pic.twitter.com/emrdDiUIN3",
+              "expanded_url": "http://twitter.com/mashable/status/663535230649769985/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 340,
+                  "h": 191,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 949,
+                  "h": 534,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "possibly_sensitive_appealable": false,
+        "lang": "en"
       }
     });
   });

@@ -1,3 +1,5 @@
+// import Ember from 'ember';
+// import DS from 'ember-data';
 import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('tweet', 'Unit | Model | tweet', {
@@ -7,6 +9,18 @@ moduleForModel('tweet', 'Unit | Model | tweet', {
 
 test('it exists', function(assert) {
   var model = this.subject();
-  // var store = this.store();
+
   assert.ok(!!model);
 });
+
+// test('its text is formatted properly', function(assert) {
+//   var tweet = this.subject(),
+//       store = this.store();
+//
+//   Ember.run(function() {
+//     tweet = store.findRecord('tweet', 663535230649770000);
+//   });
+//
+//   assert.equal(tweet.get('id'), 663535230649770000);
+//   assert.ok(tweet instanceof DS.Model);
+// });
