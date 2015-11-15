@@ -1,5 +1,7 @@
-<div class="block__media">
-  {{#each media as |item|}}
-    {{tweet-media-photo media=item}}
-  {{/each}}
-</div>
+{{#if media}}
+  <div class="block__media">
+    {{#each media as |item|}}
+      {{tweet-media-photo media=item}}
+    {{/each}}
+  </div>
+{{/if}}
