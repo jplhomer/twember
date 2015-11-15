@@ -1,3 +1,5 @@
-<div class="block__media block__media--photo">
-  <img src="{{ media.media_url_https }}" alt="Photo">
-</div>
+{{#if media}}
+  <div class="block__media block__media--photo">
+    <img src="{{ media.media_url_https }}" alt="Photo">
+  </div>
+{{/if}}
