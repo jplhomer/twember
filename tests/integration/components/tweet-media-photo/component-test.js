@@ -6,7 +6,7 @@ moduleForComponent('tweet-media-photo', 'Integration | Component | tweet media p
 });
 
 test('it renders', function(assert) {
-  assert.expect(2);
+  assert.expect(3);
 
   this.render(hbs`{{tweet-media-photo}}`);
 
@@ -57,5 +57,5 @@ test('it renders', function(assert) {
   assert.equal(this.$().children().find('.block__media').attr('class'), 'block__media block__media--photo');
 
   // ????
-  assert.equal(this.$().find('img')[0], '<img alt="Photo" src="https://pbs.twimg.com/media/CTVZxo9UYAI5Qs9.jpg"></img>');
+  assert.equal(this.$().find('.block__media').html().trim(), '<img alt="Photo" src="https://pbs.twimg.com/media/CTVZxo9UYAI5Qs9.jpg">');
 });
