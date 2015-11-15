@@ -8,19 +8,19 @@ moduleForComponent('tweet-avatar', 'Integration | Component | tweet avatar', {
 test('it renders', function(assert) {
   assert.expect(2);
 
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
   this.render(hbs`{{tweet-avatar}}`);
 
   assert.equal(this.$().text().trim(), '');
 
+  this.set('user', {
+    profile_image_url_https: 'https://pbs.twimg.com/profile_images/638342444052930560/gMZvEMvt_normal.png',
+    name: 'Josh'
+  });
+
   // Template block usage:
   this.render(hbs`
-    {{#tweet-avatar}}
-      template block text
-    {{/tweet-avatar}}
+    {{#tweet-avatar user=user}}{{/tweet-avatar}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().children().html().trim(), '<img src="https://pbs.twimg.com/profile_images/638342444052930560/gMZvEMvt_normal.png" alt="Josh\'s Profile Photo">');
 });
