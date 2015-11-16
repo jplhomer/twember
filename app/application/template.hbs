@@ -1,11 +1,17 @@
 <header class="header">
   <div class="wrapper">
     <h1>{{appName}}: Twitter with Ember</h1>
+
+    <nav>
+      {{#link-to "home"}}Home{{/link-to}}
+
+      {{#link-to "user"}}Profile{{/link-to}}
+    </nav>
   </div>
 </header>
 
 <section class="section">
   <div class="wrapper">
-    {{outlet}}    
+    {{outlet}}
   </div>
 </section>
