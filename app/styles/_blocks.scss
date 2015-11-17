@@ -5,6 +5,14 @@
       width: 100%;
     }
   }
+
+  .block__avatar {
+    border-radius: 5px;
+
+    img {
+      border-radius: 5px;
+    }
+  }
 }
 
 .block--tweet {
@@ -26,5 +34,39 @@
 }
 
 .block--glance {
-  padding: $pad;
+  border: 1px solid $highlight;
+  border-radius: 5px;
+
+  .block__text {
+    padding: $pad-half;
+  }
+
+  .block__cover {
+    background: #333;
+    height: 125px;
+  }
+
+  .block__header {
+    margin-top: -33px;
+  }
+
+  .block__avatar {
+    border: 3px solid $light;
+  }
+
+  .block__avatar,
+  .block__user {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .block__user {
+    padding-left: $pad-half;
+    padding-bottom: $pad*0.25;
+  }
+
+  .user__handle,
+  .user__name {
+    margin: 0;
+  }
 }
