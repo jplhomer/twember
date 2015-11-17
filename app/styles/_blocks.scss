@@ -101,4 +101,18 @@
     font-size: 1em;
     padding: $pad-half;
   }
+
+  .block__form-actions {
+    text-align: right;
+    padding-top: $pad;
+  }
+
+  .block__counter,
+  .btn {
+    display: inline-block;
+  }
+
+  .btn {
+    margin-left: $pad-half;
+  }
 }

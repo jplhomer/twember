@@ -1,0 +1,26 @@
+/**
+ * Buttons
+ */
+
+.btn {
+  -webkit-appearance: none;
+  border: none;
+  font-size: 1em;
+  padding: $pad-half;
+  border-radius: 5px;
+  background: $highlight;
+  color: $light;
+  cursor: pointer;
+}
+
+.btn--success {
+  background: green;
+}
+
+.btn--danger {
+  background: red;
+}
+
+.btn--primary {
+  background: #336699;
+}
