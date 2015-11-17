@@ -2,12 +2,12 @@
   <img src="https://pbs.twimg.com/profile_images/646425256/JoshSpain_bigger.jpg" alt="Josh Larson's avatar">
 </div>
 <div class="block__form {{if isExpanded 'block__form--expanded'}}">
-  {{textarea rows=numRows focus-in="expandForm" focus-out="contractForm" placeholder="What's happening?"}}
+  {{textarea rows=numRows focus-in="expandForm" focus-out="contractForm" key-up="textareaDidUpdate" placeholder="What's happening?"}}
 
   {{#if isExpanded}}
   <div class="block__form-actions">
     <div class="block__counter">140</div>
-    <button class="btn btn--success">Tweet</button>
+    <button class="btn btn--success" disabled={{isEmpty}}>Tweet</button>
   </div>
   {{/if}}
 </div>

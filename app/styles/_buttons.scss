@@ -11,6 +11,11 @@
   background: $highlight;
   color: $light;
   cursor: pointer;
+
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
 }
 
 .btn--success {
