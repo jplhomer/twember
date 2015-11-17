@@ -5,3 +5,71 @@ $pad-half: $pad*0.5;
 // Colors
 $highlight: #ccc;
 $light: #fff;
+
+//Layout
+$max-width: 72rem;
+$offset-left-1: 4.5rem;
+
+$l-sidebar-width: 19.75rem;
+
+//Defaults
+$space : 1rem;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-triple : $space*3;
+$space-quad : $space*4;
+$space-half : $space/2;
+$space-quarter : $space/4;
+$pad : 1rem;
+$pad-and-half : $pad*1.5;
+$pad-double : $pad*2;
+$pad-half : $pad/2;
+$pad-quarter :$pad/4;
+
+//Breakpoints
+$bp-small : 24em;
+$bp-small-2 : 29.75em;
+$bp-small-3 : 39.8em;
+$bp-med : 46.8em;
+$bp-med-2 : 48em;
+$bp-large : 50em;
+$bp-large-2 : 66em;
+$bp-xl : 73em;
+$bp-xxl : 89em;
+$bp-xxxl : 93em;
+
+// Brand Colors
+// Use: map-get($brands, facebook);
+$brands: (
+  facebook: #3b5998,
+  twitter: #00aced,
+  gplus: #dd4b39,
+  youtube: #bb0000,
+  pinterest: #cb2027,
+  linkedin: #007bb6,
+  instagram: #3f729b,
+  vine: #00bf8f,
+  snapchat: #fffc00,
+  flickr: #ff0084,
+  tumblr: #32506d,
+  vk: #45668e,
+  foursquare: #0072b1,
+  dribbble: #ea4c89,
+  behance: #1769ff,
+  digg: #000000,
+  github: #333333,
+  reddit: #5f99cf,
+  skype: #00aff0,
+  spotify: #7ab800,
+  yahoo: #400191,
+  yelp: #c41200,
+  delicious: #3399ff,
+  lastfm: #c3000d,
+  twitch: #6441a5,
+  soundcloud: #ff8800,
+  stumbleupon: #eb4924,
+  trello: #256a92,
+  xing: #026466,
+  dropbox: #007ee5,
+  android: #a4c639,
+);

@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +13,27 @@ body {
 }
 
 .wrapper {
-  max-width: 50rem;
+  max-width: $max-width;
   margin: 0 auto;
+}
+
+// Sidebar layou
+.l-two-col {
+  @media (min-width: $bp-med) {
+    overflow: hidden;
+
+    .l-sidebar,
+    .l-main {
+      float: left;
+    }
+
+    .l-sidebar {
+      width: 30%;
+    }
+
+    .l-main {
+      width: 70%;
+      padding-left: $pad*2;
+    }
+  }
 }

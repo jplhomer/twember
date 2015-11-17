@@ -70,3 +70,35 @@
     margin: 0;
   }
 }
+
+.block--status-update {
+  display: table;
+  width: 100%;
+  background: lightblue;
+  $height: 40px;
+
+  .block__avatar,
+  .block__form {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .block__avatar {
+    width: 50px;
+    height: $height;
+    padding-left: 10px;
+    padding-top: $pad-half;
+  }
+
+  .block__form {
+    padding: $pad-half;
+  }
+
+  textarea {
+    width: 100%;
+    display: block;
+    height: $height;
+    font-size: 1em;
+    padding: $pad-half;
+  }
+}
