@@ -102,6 +102,10 @@
     padding: $pad-half;
   }
 
+  .block__form--expanded textarea {
+    height: auto;
+  }
+
   .block__form-actions {
     text-align: right;
     padding-top: $pad;
