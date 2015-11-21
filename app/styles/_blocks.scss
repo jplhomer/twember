@@ -1,5 +1,7 @@
 .block {
   .block__media {
+    margin-top: $pad;
+
     img {
       display: block;
       width: 100%;
@@ -27,6 +29,7 @@
 
   .block__text p {
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   .block__header {
@@ -35,8 +38,10 @@
 }
 
 .block--glance {
-  border: 1px solid $highlight;
+  border: 1px solid $blue-border;
   border-radius: 5px;
+  background: $blue-header;
+  overflow: hidden;
 
   .block__text {
     padding: $pad-half;
@@ -52,7 +57,7 @@
   }
 
   .block__avatar {
-    border: 3px solid $light;
+    border: 3px solid $blue-header;
   }
 
   .block__avatar,
@@ -75,8 +80,11 @@
 .block--status-update {
   display: table;
   width: 100%;
-  background: lightblue;
+  background: $blue-moderate;
   $height: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px slid $blue-border;
 
   .block__avatar,
   .block__form {
