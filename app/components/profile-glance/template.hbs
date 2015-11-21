@@ -1,14 +1,14 @@
-<div class="block__cover"></div>
+<div class="block__cover" style="background-image: url({{user.profileBannerUrl}});"></div>
 <div class="block__text">
   <div class="block__header">
     <div class="block__avatar">
       {{#link-to "user"}}
-        <img src="https://pbs.twimg.com/profile_images/646425256/JoshSpain_bigger.jpg" alt="Josh Larson's avatar">
+        <img src="{{user.profileImageUrlHttps}}" alt="{{user.name}}'s avatar">
       {{/link-to}}
     </div>
     <div class="block__user">
-      <h2 class="user__name">{{#link-to "user"}}Josh Larson{{/link-to}}</h2>
-      <div class="user__handle">{{#link-to "user"}}@jplhomer{{/link-to}}</div>
+      <h2 class="user__name">{{#link-to "user"}}{{user.name}}{{/link-to}}</h2>
+      <div class="user__handle">{{#link-to "user"}}@{{user.screenName}}{{/link-to}}</div>
     </div>
   </div>
   <div class="block__stats">
@@ -19,11 +19,11 @@
       </li>
       <li>
         <h4>Following</h4>
-        <p>10</p>
+        <p>{{user.friendsCount}}</p>
       </li>
       <li>
         <h4>Followers</h4>
-        <p>10</p>
+        <p>{{user.followersCount}}</p>
       </li>
     </ul>
   </div>
