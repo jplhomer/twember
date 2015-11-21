@@ -1,3 +1,9 @@
-<div class="empty">
-  <p>You know what? No tweets here.</p>
-</div>
+{{#each tweets as |tweet|}}
+  <li>
+    {{tweet-list/tweet-post tweet=tweet}}
+  </li>
+{{else}}
+  <div class="empty">
+    <p>You know what? No tweets here.</p>
+  </div>
+{{/each}}

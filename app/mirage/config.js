@@ -12,7 +12,8 @@ export default function() {
   // this.timing = 400;      // delay for each request, automatically set to 0 during testing
 
   this.get('/users/:id');
-  
+  this.get('/tweets');
+
   /*
     Route shorthand cheatsheet
   */

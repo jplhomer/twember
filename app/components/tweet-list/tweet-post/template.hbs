@@ -1,0 +1,20 @@
+<div class="block block--tweet" {{action "toggleExpanded"}}>
+  <div class="block__header">
+    {{#if tweet.user}}
+      <div class="block__avatar">
+        <img src="{{tweet.user.profileImageUrlHttps}}" alt="{{tweet.user.name}}'s Profile Photo">
+      </div>
+      <a href="#">{{tweet.user.name}}</a> @{{tweet.user.screenName}} •
+      <a href="#"><span class="block__timestamp">{{moment-from-now tweet.created_at allow-empty=true}}</span></a>
+    {{/if}}
+  </div>
+  <div class="block__text">
+    <p>{{tweet.text}}</p>
+  </div>
+  {{#if tweet.media}}
+    {{tweet-media media=media}}
+  {{/if}}
+  {{#if isExpanded}}
+    <p>Expanded</p>
+  {{/if}}
+</div>
