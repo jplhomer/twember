@@ -7,7 +7,7 @@
   border: none;
   font-size: 1em;
   padding: $pad-half;
-  border-radius: 5px;
+  border-radius: 2px;
   background: $highlight;
   color: $light;
   cursor: pointer;
@@ -27,5 +27,5 @@
 }
 
 .btn--primary {
-  background: #336699;
+  background: $blue-primary;
 }
