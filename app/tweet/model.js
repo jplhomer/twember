@@ -5,8 +5,7 @@ export default DS.Model.extend({
   text: DS.attr( 'string' ),
   created_at: DS.attr( 'date' ),
   entities: DS.attr(),
-
-  user: DS.belongsTo('user'),
+  user: DS.attr(),
 
   /**
    * Print out a formatted text version of the tweet

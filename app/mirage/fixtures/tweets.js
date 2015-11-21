@@ -1,11 +1,5 @@
 export default [
   {
-    id: 1,
-    user: 1,
-    text: "Hello, world!",
-    "created_at": "Mon Nov 09 01:55:01 +0000 2015"
-  }
-  /*{
     "created_at": "Mon Nov 09 01:55:01 +0000 2015",
     "id": 663535230649770000,
     "id_str": "663535230649769985",
@@ -965,5 +959,5 @@ export default [
     "favorited": false,
     "retweeted": false,
     "lang": "en"
-  }*/
+  }
 ];
