@@ -3,8 +3,13 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   classNames: ['block block--status-update'],
 
-  isEmpty: true, // Or use Ember.computed
+  isEmpty: Ember.computed('tweetText', function() {
+    return ! this.get('tweetText').length;
+  }),
+
   numRows: 1,
+
+  tweetText: '',
 
   actions: {
     contractForm() {
@@ -20,7 +25,7 @@ export default Ember.Component.extend({
     },
 
     textareaDidUpdate( value ) {
-      this.set('isEmpty', !value.length);
+      // this.set('isEmpty', !value.length);
     }
   }
 });

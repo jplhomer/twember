@@ -2,7 +2,7 @@
   <img src="https://pbs.twimg.com/profile_images/646425256/JoshSpain_bigger.jpg" alt="Josh Larson's avatar">
 </div>
 <div class="block__form {{if isExpanded 'block__form--expanded'}}">
-  {{textarea rows=numRows focus-in="expandForm" focus-out="contractForm" key-up="textareaDidUpdate" placeholder="What's happening?"}}
+  {{textarea rows=numRows focus-in="expandForm" focus-out="contractForm" key-up="textareaDidUpdate" placeholder="What's happening?" value=tweetText}}
 
   {{#if isExpanded}}
   <div class="block__form-actions">
