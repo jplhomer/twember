@@ -1,8 +1,11 @@
 <div class="block block--tweet" {{action "toggleExpanded"}}>
   <div class="block__header">
     {{#if user}}
-      {{tweet-avatar user=user}}
-      <a href="#">{{user.name}}</a> @{{user.screen_name}} • <a href="#">{{tweet-timestamp time=created_at}}</a>
+      <div class="block__avatar">
+        <img src="{{user.profile_image_url_https}}" alt="{{user.name}}'s Profile Photo">
+      </div>
+      <a href="#">{{user.name}}</a> @{{user.screen_name}} •
+      <a href="#"><span class="block__timestamp">{{moment-from-now created_at allow-empty=true}}</span></a>
     {{/if}}
   </div>
   <div class="block__text">
