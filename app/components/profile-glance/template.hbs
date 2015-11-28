@@ -1,14 +1,14 @@
-<div class="block__cover" style="background-image: url({{user.profileBannerUrl}});"></div>
+<div class="block__cover" style="background-image: url({{user.profile_banner_url}});"></div>
 <div class="block__text">
   <div class="block__header">
     <div class="block__avatar">
       {{#link-to "user"}}
-        <img src="{{user.profileImageUrlHttps}}" alt="{{user.name}}'s avatar">
+        <img src="{{user.profile_image_url_https}}" alt="{{user.name}}'s avatar">
       {{/link-to}}
     </div>
     <div class="block__user">
       <h2 class="user__name">{{#link-to "user"}}{{user.name}}{{/link-to}}</h2>
-      <div class="user__handle">{{#link-to "user"}}@{{user.screenName}}{{/link-to}}</div>
+      <div class="user__handle">{{#link-to "user"}}@{{user.screen_name}}{{/link-to}}</div>
     </div>
   </div>
   <div class="block__stats">
@@ -19,11 +19,11 @@
       </li>
       <li>
         <h4>Following</h4>
-        <p>{{user.friendsCount}}</p>
+        <p>{{user.friends_count}}</p>
       </li>
       <li>
         <h4>Followers</h4>
-        <p>{{user.followersCount}}</p>
+        <p>{{user.followers_count}}</p>
       </li>
     </ul>
   </div>

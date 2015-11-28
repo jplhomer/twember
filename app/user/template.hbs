@@ -1,15 +1,35 @@
-<h1>My Profile</h1>
+<section class="section section--profile">
+  <div class="profile__cover">
+    <div class="bg" style="background-image: url({{model.user.profile_banner_url}});"></div>
+    <div class="wrapper">
+      <div class="cover__avatar">
+        <img src="{{model.user.profile_image_url_https}}" alt="{{model.user.name}}'s Profile Photo">
+      </div>
 
-{{#link-to "user.index"}}
-  Tweets
-{{/link-to}}
+      <div class="cover__stats">
+        {{#link-to "user.index"}}
+          Tweets
+        {{/link-to}}
 
-{{#link-to "user.following"}}
-  Following
-{{/link-to}}
+        {{#link-to "user.following"}}
+          Following
+        {{/link-to}}
 
-{{#link-to "user.followers"}}
-  Followers
-{{/link-to}}
+        {{#link-to "user.followers"}}
+          Followers
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
 
-{{outlet}}
+  <div class="wrapper">
+    <div class="l-two-col">
+      <div class="l-sidebar">
+        Test
+      </div>
+      <div class="l-main">
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+</section>

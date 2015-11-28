@@ -1,11 +1,15 @@
-<div class="l-two-col">
-  <div class="l-sidebar">
-    <aside>
-      {{profile-glance user=model.user}}
-    </aside>
+<section class="section">
+  <div class="wrapper">
+    <div class="l-two-col">
+      <div class="l-sidebar">
+        <aside>
+          {{profile-glance user=model.user}}
+        </aside>
+      </div>
+      <div class="l-main" role="main">
+        {{status-update}}
+        {{tweet-list tweets=model.tweets}}
+      </div>
+    </div>
   </div>
-  <div class="l-main" role="main">
-    {{status-update}}
-    {{tweet-list tweets=model.tweets}}
-  </div>
-</div>
+</section>

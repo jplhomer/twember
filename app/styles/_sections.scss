@@ -1,3 +1,31 @@
 .section {
   padding: $pad*2 0;
 }
+
+.section--profile {
+  padding-top: 0;
+
+  .profile__cover {
+    position: relative;
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover__stats {
+    margin-top: 10rem;
+  }
+}
